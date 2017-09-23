@@ -1,0 +1,34 @@
+.nav-ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+.name-header {
+    display: flex;
+    flex: .2;
+    font-size: 25px;
+}
+
+.first-link {
+    display: flex;
+    flex: .2;
+    font-size: 20px;
+}
+
+.second-link {
+    display: flex;
+    flex: .2;
+    font-size: 20px;
+}
+
+.third-link {
+    display: flex;
+    flex: .2;
+    font-size: 20px;
+}
+
+.fourth-link {
+    display: flex;
+    flex: .2;
+    font-size: 20px;
+}
