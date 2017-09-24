@@ -1,21 +1,30 @@
 import React from 'react';
 import { render } from 'react-dom';
-import {Grid, Row, Col, Jumbotron} from 'react-bootstrap';
-import "../styles/commonStyles.scss"
+import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
+import '../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+// import "../styles/commonStyles.scss"
+
+var products = [{
+      id: 1,
+      name: "Product1",
+      price: 120
+  }, {
+      id: 2,
+      name: "Product2",
+      price: 80
+  }];
 
 export default class Table extends React.Component {
+
+  
+  
   render() {
     return (
-     <div style={{textAlign: 'center'}}>
-        <Grid>
-            <Row>
-                <Col sm={12} md={12} lg={12}>
-                    <Jumbotron>
-                        <h1>Bootstrap test</h1>
-                    </Jumbotron>
-                </Col>
-            </Row>
-        </Grid>
-    </div>);
+      <BootstrapTable data={products} striped hover>
+        <TableHeaderColumn isKey dataField='id'>Product ID</TableHeaderColumn>
+        <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
+      </BootstrapTable>
+     );
   }
 }

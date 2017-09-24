@@ -6,8 +6,11 @@
   "license": "MIT",
   "dependencies": {
     "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
     "path": "^0.12.7",
     "react": "^15.6.1",
+    "react-bootstrap-table": "^4.0.5",
     "react-dom": "^15.6.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
